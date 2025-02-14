@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post
+	</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="images/Favicon.png" />
+	<script type="text/javascript" src="script.js"></script>
+<body>
+
+	<header>
+		<a href="/" class="logo_link">
+		  <div class="logo">
+			<h4>Christine Johnson</h4>
+		  </div>
+		</a>
+		<nav>
+		<ul class="navigation">
+		  <li><a href="area51.html">Area 51</a></li>
+		  <li><a href="about.html">About</a></li>
+		   <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+		</ul>
+	  </nav>
+	  </header>
+
+<div id="page-container">
+	<div id="content-wrap">
+
+<section class="hero">
+	<div class="cover_photo">
+		<img class="cover_photo" src="images/DnD_Hero.jpg">
+	</div>
+</section>
+
+<section class="blog_post">
+	
+<section class="summary">
+	<div class="main_summary">
+		<p>I was introduced to the wonderful world of DnD by my friends and I fell in love with it so much that I wanted to make a web app for it. My friend is a wonderful Java developer, and she is helping with all the database elements while I work on the front end and learn Angluar. </p>
+	</div>
+</section>
+
+		<h2>Research</h2>
+		<p>I did a little bit of research on existing DnD dashboards out there to get a feel for what kind of elements I would need to include on the pages. In addition, I also did some research for the style that I wanted to use for the dashboard.	
+        </p>
+        <p>I took a lot of inspiration from existing DnD printable character sheets, which typically have all the information a player could want listed on one page. The official DnD site also has a similar dashboard tool that essentially takes what is on the sheet and translates it to a web page. While I really enjoyed the designs, I wanted to try and make my design a bit more streamlined and SASS-y looking (see what I did there? Sassy? I’ll be here all week).</p>
+	<figure>
+            <img src="images/Dnd Inspo.jpg">
+            <figcaption>A lot of the DnD character sheets I found online had a similar layout and similar design characteristics; the official DnD site one even features the little sheild icon.</figcaption>
+	</figure>
+	
+
+		<h2>Wireframes</h2>
+        <p>As I mentioned before, I wanted to start my layout with a SASS application in mind, so I created a very rough layout that had all the elements I wanted to show the user. I even had a checklist of all the stat items a user might need that I crossed off as I added them to my wireframe, to be sure I didn’t miss any.</p>
+        <figure>
+			<img src="images/Dnd_First Wireframe.png">
+		</figure>	
+		<p>My first wireframe out of the way, I then took it to the next step and tried out a more structured page, with more clear indications of what design elements would look like. I took it back to my DnD group and asking for feedback. One of the immediate things they commented on was the circle health bar, which didn’t make any sense in context. Yea, it looked cool, but it wasn’t an accurate way to tell how much health a player had left. They noted that a written number of exactly how much health a player had left would be much more useful, since a lot of hits and rolls in DnD rely on numbers and multiplications of those numbers, rather than a health bar.</p>
+		<p>By removing the big circle from my second wireframe, it freed up space to have more information about the actual character, as well as room for other information like Hit Die to appear on the screen.</p>
+		
+			<figure style="text-align: center">
+				<img src="images/DnD_Second Wireframe.png">
+				<figcaption>The second wireframe removed the circular health bar and made room for other, more important items, like AC.</figcaption>
+			</figure>
+
+		<h2>UI High Fidelity</h2>
+		<p>In order to begin working on the Angular portion of the design, I started to create a high-fidelity version of my initial play screen. I really wanted a Material-esque design feel to my components, so it centered around a lot of rounded corners and drop shadows. I also wanted players to be able to customize their banner, so I added an image up top that could be changed out. I also wanted a little “zing” of accent color, so I chose #83F7E5 as both a very engaging, high profile color, and as an accessible contrast color to the dark #2C2E3B text color.</p>
+		<figure>
+            <img class="container_image" src="images/DnD_Final Design.jpg">
+            <figcaption>The final design starts exploring where color can be applied, as well as how the information would stay at the top of the screen in a collapsed format when the user scrolls down the page.</figcaption>
+		</figure>
+		
+
+		<h2>After Thoughts</h2>
+		<p>This design is still a work in progress, and I pick it up every now and then with my friend when we feel like working on it. 
+
+            The next portion I would like to work on is the inventory section of the design, since that could present an interesting challenge for how to display it (Notes? Small icons? Illustrations?). Now that COVID is (hopefully) past us, I would like to get a new campaign together and use this tool for it so that I can get even more user feedback.
+            
+            If you would like to see what we have built so far, head on over to <a href="https://github.com/cjohnson1341/dnd-app">Github</a> to check it out!</p>            
+
+</section>
+
+<footer>
+
+	<div class="left_footer_column">
+		<div class="social_icons">
+	<a href="https://codepen.io/cjohnson1341" target="_blank"><svg aria-labelledby="simpleicons-codepen-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="logos"><title id="simpleicons-codepen-icon">Dribbble icon</title><path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z"/></svg></a>
+			<a href="https://dribbble.com/cjohnson1341" target="_blank"><svg aria-labelledby="simpleicons-dribbble-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="logos"><title id="simpleicons-dribbble-icon">Dribbble icon</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg></a>
+	<a href="https://www.instagram.com/christinefjohnson/" target="_blank"><svg aria-labelledby="simpleicons-instagram-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="logos"><title id="simpleicons-instagram-icon">Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+	<a href="https://github.com/cjohnson1341" target="_blank"><svg aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="logos"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+		</div>
+		<a href="mailto:cfjohnson1341@gmail.com" class="email">cfjohnson1341@gmail.com</a>
+	</div>
+
+	<div class="right_footer_column">
+		<div class="favorites">
+			<div class="list_one">
+				<ul>
+					<li class="title">Current Favorites:</li>
+					<li>-#F73859</li>
+					<li>-Animal Crossing</li>
+					<li>-Front End Mentor</li>
+				</ul>
+			</div>
+
+			<div class="list_two">
+				<ul>
+					<li class="title">All Time Favorites:</li>
+					<li>-Rainy Days</li>
+					<li>-Jazz</li>
+					<li>-Tea with milk</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>
